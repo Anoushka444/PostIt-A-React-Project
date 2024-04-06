@@ -1,3 +1,4 @@
+import classes from'./Post.module.css';
 
 const names = ['Anoushka', 'Chetan']
 
@@ -5,12 +6,10 @@ const names = ['Anoushka', 'Chetan']
 
 function Post() {
     const chosenName = Math.random() > 0.5 ? names[0] : names[1];
-
     return (
-        <div>
-            <p>{chosenName}</p>
+        <li>
             <p> Reactjs is awesome</p>
-        </div>
+        </li>
     );
 }
 
