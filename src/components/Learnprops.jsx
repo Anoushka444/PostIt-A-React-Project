@@ -3,11 +3,11 @@ import classes from './Post.module.css';
 
 
 
-function Learnprops(props) {
+function Learnprops({author, body}) {
     return (
         <li className={classes.post}>
-            <p className={classes.author}>{props.author}</p>
-            <p className={classes.text}>{props.bookName}</p>
+            <p className={classes.author}>{author}</p>
+            <p className={classes.text}>{body}</p>
         </li>
     );
 }

@@ -1,35 +1,45 @@
-import classes from './PostsList.module.css';
-import Learnprops from './Learnprops';
-import NewPost from './NewPost';
 import { useState } from 'react';
 
+import Post from './Post';
+import NewPost from './NewPost';
+import Modal from './Modal';
+import classes from './PostsList.module.css';
+
+function PostsList() {
+    const [ModalIsVisible, setModalIsVisible]= useState(true);
+  const [enteredBody, setEnteredBody] = useState('');
+  const [enteredAuthor, setEnteredAuthor] = useState('');
 
 
-function PostsList(){
-    const [enteredBody, setEnteredBody]=useState('');
+function HiDEModalHandler()
 
-    const[enteredAuthor,setenteredAuthor]=useState('');
-
-function bodyChangeHandler(event)
 {
+setModalIsVisible(false);
+}
+
+  function bodyChangeHandler(event) {
     setEnteredBody(event.target.value);
-}
+  }
 
-function authorChangeHandler(event)
-{
+  function authorChangeHandler(event) {
     setEnteredAuthor(event.target.value);
-}
-return(
-    <>
-    <NewPost onBodyChange={bodyChangeHandler} onAuthodChange={authorChangeHandler}/>
-<ul className={classes.posts}>
-    <Learnprops author={enteredAuthor} bookName={enteredBody}  />
-    <Learnprops author="Chetan's book" bookName="abc'"/>
-    <Learnprops author="Akshita's book" bookName="Hii" />
-</ul>
-</>
-);
+  }
 
+  return (
+    <>
+    {ModalIsVisible ? <Modal onClose={HiDEModalHandler}>
+        <NewPost
+          onBodyChange={bodyChangeHandler}
+          onAuthorChange={authorChangeHandler}
+        />
+      </Modal>: null}
+      
+      <ul className={classes.posts}>
+        <Post author={enteredAuthor} body={enteredBody} />
+        <Post author="Manuel" body="Check out the full course!" />
+      </ul>
+    </>
+  );
 }
 
 export default PostsList;
