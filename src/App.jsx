@@ -10,13 +10,15 @@ function App() {
   const [ModalIsVisible, setModalIsVisible]= useState(false);
   
 
-  function showModalHandler(){
-setModalIsVisible(true);
+  function showModalHandler()
+  {
+    setModalIsVisible(true);
   }
+
   function HiDEModalHandler()
-{
-setModalIsVisible(false);
-}
+  {
+    setModalIsVisible(false);
+  }
   
   return (
     <>
