@@ -1,4 +1,3 @@
-
 import {Outlet} from 'react-router-dom'
 import NewPost from './NewPost';
 import Learnprops from '../components/Learnprops'
