@@ -1,4 +1,8 @@
-This is a miniature version of Twitter. It is a simple project to understand React the usage of components, Modals wrapping features, Loaders, Hooks by implementing them.  
+It is a demo application which allows users to create posts, view posts, and also load the details of a post (Currently in progress), with the help of routing.
+It was built to understand React better, how to work with props, components, state, Modals wrapping components, Loaders, Hooks and how to add Routing to support multi-page experience while still being a single page Applicaition. 
+
+React Router helps with data loading and data submission. 
+How to make component code leaner. 
 
 What it does?
 Once you clone it on your local, it will open a single page web app hosted on 80 port. It shows a simple posting action. 
