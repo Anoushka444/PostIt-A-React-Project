@@ -7,6 +7,7 @@ I used a simple backend to store the posts.json and fetch them as and when neces
 In short, it is a simple project to understand how to connect UI components with your backend data, send and receive api requests on the server. 
 
 
+![image](https://github.com/Anoushka444/React-Essentials/assets/35841938/b161c10b-7bb0-41b7-8e00-207016ee4e9f)
 
 
 Installations:
