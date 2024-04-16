@@ -1,13 +1,23 @@
-It is a demo application which allows users to create posts, view posts, and also load the details of a post (Currently in progress), with the help of routing.
-It was built to understand React better, how to work with props, components, state, Modals wrapping components, Loaders, Hooks and how to add Routing to support multi-page experience while still being a single page Applicaition. 
+It is a demo application which allows users to 
+1. Create posts
+2. View posts
+3. Load the details of a post (Currently in progress), with the help of dynamic routing.
+   
+It was built to solidify React Essentials:
+1. Props
+2. Components
+3. State management
+4. Modals wrapping components
+5. Loaders
+6. Hooks
+7. How to work with routing to support multi-page experience while still being a single page Applicaition. 
 
-React Router helps with data loading and data submission. 
-How to make component code leaner. 
+There has also been attempt to keep the code leaner and follow best practices, while there is always room for improvement. 
 
-What it does?
-Once you clone it on your local, it will open a single page web app hosted on 80 port. It shows a simple posting action. 
-The project enables users to post a new "post", and display the data on theat page. 
-I used a simple backend to store the posts.json and fetch them as and when necessary. 
+Functionality
+After cloning it to your system, the project will open a single page web app. It displays a simple posting action. 
+The project enables users to post a new "post", and display the data on that page. The data is fetched from backend and then displayed.
+
 In short, it is a simple project to understand how to connect UI components with your backend data, send and receive api requests on the server. 
 
 
@@ -15,7 +25,8 @@ In short, it is a simple project to understand how to connect UI components with
 
 
 Installations:
-You can use Vite to create React App. 
+You can use Vite/create-react-app using node to create React App. 
+Further instructions in progress. 
 
 # React + Vite
 
