@@ -1,4 +1,4 @@
-It is a demo application which allows users to 
+It is an application which allows users to 
 1. Create posts
 2. View posts
 3. Load the details of a post (Currently in progress), with the help of dynamic routing.
